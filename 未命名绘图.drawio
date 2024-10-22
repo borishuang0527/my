@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" border="50" scale="3" compressed="false" locked="false" version="24.7.17">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" border="50" scale="3" compressed="false" locked="false" version="24.8.0">
   <diagram name="Blank" id="YmL12bMKpDGza6XwsDPr">
     <mxGraphModel dx="1450" dy="530" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="1" shadow="0">
       <root>
@@ -90,7 +90,7 @@
         <mxCell id="e0NfMve8crzXOIm3tzwG-41" value="点击跳转第三方系统" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="83" y="405" width="70" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="e0NfMve8crzXOIm3tzwG-42" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=0.043;exitY=0.973;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1" source="e0NfMve8crzXOIm3tzwG-43">
+        <mxCell id="e0NfMve8crzXOIm3tzwG-42" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=0.043;exitY=0.973;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="e0NfMve8crzXOIm3tzwG-43" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="270" y="440" as="sourcePoint" />
             <mxPoint x="630" y="442" as="targetPoint" />
@@ -127,8 +127,8 @@
         <mxCell id="e0NfMve8crzXOIm3tzwG-51" value="验证code" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="254" y="486" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="e0NfMve8crzXOIm3tzwG-53" value="携带token，获取用户信息" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="432" y="552" width="147.5" height="30" as="geometry" />
+        <mxCell id="e0NfMve8crzXOIm3tzwG-53" value="3.携带token，获取用户信息" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="432" y="552" width="163" height="30" as="geometry" />
         </mxCell>
         <mxCell id="e0NfMve8crzXOIm3tzwG-54" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -160,14 +160,17 @@
         <mxCell id="e0NfMve8crzXOIm3tzwG-62" value="返回用信息" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="398" y="572" width="187" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="XWB5sGdq6GC4tunxpNrE-1" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="XWB5sGdq6GC4tunxpNrE-1" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="227" y="443" as="sourcePoint" />
             <mxPoint x="339" y="443" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="XWB5sGdq6GC4tunxpNrE-2" value="验证第三方地址" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="XWB5sGdq6GC4tunxpNrE-2" value="验证第三方地址" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="254" y="412" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="udewBWR9jGqcUeSSQTjH-1" value="第三方url中执行步骤：&lt;div&gt;步骤一：访问sso统一认证系统接口，携带client_id等信息，换取授权码code。&lt;br&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&amp;nbsp;示例：1.http://www.sssserver:8600/xxl-sso-server/oauth-server/authorize?response_type=code&amp;amp;redirect_uri=http://www.othersystem.com/index&amp;amp;client_id=client1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;步骤二：携带1中的code，以及其他必要信息换取token&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;示例：2.http://www.sssserver:8600/xxl-sso-server/oauth-server/accessToken，&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;POST提交如下数据：client_id= client1 &amp;amp; client_secret=&lt;span style=&quot;background-color: initial;&quot;&gt;d834...&amp;amp;grant_type=authorization_code&amp;amp;code=828...&amp;amp;redirect_uri=&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;http://www.othersystem.com/index&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;步骤三：携带token访问用户信息&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;示例：3.http://www.sssserver:8600/xxl-sso-server/oauth-server/userInfo?access_token=a4fecea35f5e40f63f1a61918bf7c8f7&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-91" y="680" width="931" height="165" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
